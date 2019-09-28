@@ -1,0 +1,21 @@
+@layout('layouts.app')
+
+@section('content')
+        <div class="row">
+                @each(post in posts)
+        <div class="col-4 col-m-6" id="entry">
+            <div class="card">
+                <a href="/post/{{ post._id }}">
+                    <div class="blogimage">
+                        <img src="{{ post.image }}" id="thumb" alt="Image">
+                    </div>
+                    <div class="title" id="t0">
+                        {{ post.title }}
+                    </div>
+                </a>
+            </div>
+        </div>
+        @endeach
+    </div>
+@endsection
+

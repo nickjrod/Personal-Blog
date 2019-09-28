@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html id="html">
+<head>
+	<title>Nicholas Rodriguez</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:800|PT+Sans|Raleway&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-12" id="toptile">
+            <h2 id="top" class="top-item">HOW I GOT HERE</h2>
+            <div id="image-container" class="top-item">
+                <img src="/photos/nick-header.png" id="header-photo" alt="">
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-12" id="bar">
+            <form action="/search" method="GET" encType="multipart/form-data" class="search-bar">
+                <input type="text" name="search" placeholder="Search...">
+		<input type="submit" style="display: none" />
+            </form>
+            <span style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776; <div id=mobile-menu-btn>MENU</div>
+            </span>
+		@if(!auth)
+                <a href="/auth/login" class="button">
+                    LOGIN
+                </a>
+		@else
+                <a href="/auth/logout" class="button">
+                    LOGOUT
+                </a>
+		@endif
+                <a href="/posts/new" class="button">
+                    CREATE
+                </a>
+                <a href="/auth/register" class="button">
+                    REGISTER
+                </a>
+                <a href="/" class="button">
+                    HOME 
+                </a>
+        </div>    
+    </div>
+
+    <div id="mobile-nav" class="overlay">
+        <div class="search-bar">
+                <input type="text1" name="search" placeholder="Search...">
+            </div>
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-contents">
+            <a href="/"> HOME </a>
+            <a href="/posts/new"> CREATE </a>
+                <a href="/auth/register"> REGISTER </a>
+		@if(!auth)
+                <a href="/auth/login"> LOGIN </a>
+		@else
+                <a href="/auth/logout"> LOGOUT </a>
+		@endif
+        </div>
+    </div>
+
+	@!section('content')
+
+    <div class="row" id="row-footer">
+        <div class="footer">
+            <h2>HOW I GOT HERE</h2>
+        </div>
+    </div>
+
+
+</body>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="/js/myScript.js"></script> 
+</html>
+

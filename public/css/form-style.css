@@ -1,0 +1,50 @@
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+
+.control-group {
+	text-align: center;
+}
+
+.control-group * {
+	vertical-align: middle;
+}
+
+#form-container {
+	margin-left: auto;
+	margin-right: auto;
+	padding : 25px;
+	border-width: 1px;
+	border-style: solid;
+	width: 75%;
+}
+
+textarea {
+	white-space: pre-wrap;
+}
+
+#form-container input[type="text"], textarea, input[type="password"] {
+  background-color : #F5F5F5; 
+  width: 100%;
+
+}
+
+#form-container input[type="text"], label, input[type="password"] {
+
+  display: block;
+
+}
+
+#form-container input[type="text"], input[type="password"] {
+
+  position: relative;
+
+}
+
+.label {
+	width: 50%;
+}

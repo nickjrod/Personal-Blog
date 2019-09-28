@@ -1,0 +1,41 @@
+@layout('layouts.app')
+@section('content')
+<link rel="stylesheet" type="text/css" href="/css/styles0.css">
+<div class="row" id="content">
+       	<div class="article-header">
+       		<div class="article-image col-m-12 col-6 col-s">
+        		<img src="{{post.image}}" id="thumb" alt="Image">
+       		</div>
+
+       		<div class="article-title col-m-12 col-6 col-s">
+        		<div class="title">{{ post.title }}</div>
+       			<div class="meta"> 
+       				<div class="byline"><i>by</i> <a href="/" title="Posts by Nicholas Rodriguez" rel="author"><div id="name">Nicholas Rodriguez</div> </a> </div> 
+       				<div class="date"> | {{post.createdAt}} </div>
+       			</div>
+       		</div>
+       	</div>       	
+    	
+    	<div class="article-body">
+		@each(content in post.content)
+    			<p class="body-intro">
+    				{{ content  }}
+    			</p>
+		@endeach
+    	</div>
+
+    	<div class="article-bottom">
+    		<div class="image-of-me">
+    			<img class="byline-image" src="/photos/nick-footer.jpg" height="150" width="150">
+    		</div>
+
+    		<div class="byline-bottom">
+    			<div class="byline2">
+    				<p id="p1"><i>by</i> <a href="/">Nicholas Rodriguez</a></p>
+    				<p id="p2">Nick is an aspiring web developer trying to share himself with the rest of the world</p>
+    			</div>
+    		</div>
+
+    	</div>
+	</div>
+@endsection
