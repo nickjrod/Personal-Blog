@@ -65,7 +65,8 @@ app.post('/user/login', loginUserController);
 app.get('/auth/logout', logoutController);
 app.get('/auth/login', loginController);
 
-
-app.listen(3000, () => {
-	console.log('App listening on port 3000');
-});
+let port = process.env.PORT;
+if (port == null || port == "") {
+	port = 8000;
+}
+app.listen(port);
