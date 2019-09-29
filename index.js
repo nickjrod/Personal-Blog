@@ -1,4 +1,5 @@
 const { config, engine } = require('express-edge');
+const dotenv = require('dotenv');
 const express = require('express');
 const mongoose = require('mongoose');
 const dateformat = require('dateformat');
@@ -29,7 +30,11 @@ app.use(expressSession({
 	saveUninitialized: true
 }));
 
-mongoose.connect('mongodb://localhost/test',{useUnifiedTopology: true, useNewUrlParser: true}).then(() => 'You are now connected to Mongo!').catch(err => console.error('Something went wrong', err));
+dotenv.config()
+const uri = process.env.MONGOLAB_URI; 
+console.log(`Your URI is ${uri}`);
+
+mongoose.connect(uri,{useUnifiedTopology: true, useNewUrlParser: true}).then(() => 'You are now connected to Mongo!').catch(err => console.error('Something went wrong', err));
 
 const mongoStore = connectMongo(expressSession);
 
