@@ -10,6 +10,7 @@ const connectMongo = require('connect-mongo');
 const auth = require('./middleware/auth');
 const edge = require('edge.js');
 const expressSession = require('express-session');
+const aws = require('aws-sdk');
 
 const createPostController = require('./controllers/createPost');
 const homePageController = require('./controllers/homePage');
@@ -32,11 +33,11 @@ app.use(expressSession({
 
 dotenv.config()
 const uri = process.env.MONGOLAB_URI; 
-console.log(`Your URI is ${uri}`);
 
 mongoose.connect(uri,{useUnifiedTopology: true, useNewUrlParser: true}).then(() => 'You are now connected to Mongo!').catch(err => console.error('Something went wrong', err));
 
 const mongoStore = connectMongo(expressSession);
+const S3_BUCKET = process.env.S3_BUCKET;
 
 app.use(expressSession({
 	secret: 'secret',
