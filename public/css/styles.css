@@ -48,7 +48,6 @@ html {
 h2 {
     
     font-size: 5em;
-    /*letter-spacing: -8px;*/
     text-align: center;
 
     margin: 0px;
@@ -228,15 +227,9 @@ input[type="text1"], textarea {
 
 #entry {
     float: left;
-    /*width: calc(33% - .5rem);*/
     padding: 0 1em 0 0;
     padding-bottom: 1%
 }
-
-/*
-#entry:not(:last-child){
-    
-}*/
 
 .card {
     width: 100%;
@@ -313,7 +306,6 @@ For mobile phones:
 
     h2 {
         font-size: 2.5em;
-        /*letter-spacing: -3px*/;
     }
 
     .title {
@@ -378,7 +370,6 @@ For mobile phones:
 
     h2 {
         font-size: 3em;
-        letter-spacing: -4px;
     }
 
     .title {
@@ -448,7 +439,6 @@ For mobile phones:
 
     h2 {
         font-size: 5em;
-        /*letter-spacing: -8px;*/
     }
 
     .title {
