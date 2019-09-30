@@ -15,7 +15,7 @@ module.exports = (req, res) => {
 	var imageName = image.name;
 	var path_start = 'public/posts/';
 	var myKey = path_start+imageName;
-	
+	var url_base = "https://nicks-blog-bucket.s3-us-west-1.amazonaws.com/public"	
 	params = {Bucket: bucket, Key: myKey, Body: image.data};
 	s3.putObject(params, function(err, data) {
 		if(err){
@@ -33,7 +33,7 @@ module.exports = (req, res) => {
 			...req.body, 
 			content: contents, 
 			tags: tags, 
-			image: `/posts/${image.name}`
+			image: `${url_base}/posts/${image.name}`
 		}, (error, post) => {
                 		res.redirect('/');
                 	});
