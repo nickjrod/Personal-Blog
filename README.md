@@ -9,4 +9,4 @@ This blog has two main purposes:
 - About Page
 
 ## Acknowledgments
-* Heavy/Inspiration credit to www.manrepeller.com for design of front end
+* Heavy inspiration/credit to www.manrepeller.com for design of front end
