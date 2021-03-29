@@ -26,21 +26,6 @@
             </form>
             <span style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776; <div id=mobile-menu-btn>MENU</div>
             </span>
-		@if(!auth)
-                <a href="/auth/login" class="button">
-                    LOGIN
-                </a>
-		@else
-                <a href="/auth/logout" class="button">
-                    LOGOUT
-                </a>
-		@endif
-                <a href="/posts/new" class="button">
-                    CREATE
-                </a>
-                <a href="/auth/register" class="button">
-                    REGISTER
-                </a>
                 <a href="/" class="button">
                     HOME 
                 </a>
@@ -54,13 +39,6 @@
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-contents">
             <a href="/"> HOME </a>
-            <a href="/posts/new"> CREATE </a>
-                <a href="/auth/register"> REGISTER </a>
-		@if(!auth)
-                <a href="/auth/login"> LOGIN </a>
-		@else
-                <a href="/auth/logout"> LOGOUT </a>
-		@endif
         </div>
     </div>
 
