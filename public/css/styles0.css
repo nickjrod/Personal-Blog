@@ -303,12 +303,6 @@ input[type="text1"], textarea {
     align-content: center 
 }
 
-.image-of-me > img {
-    border-radius: 50%;
-    transform: rotate(90deg);
-
-}
-
 .byline-bottom {
     position: relative;
     display: block;
@@ -459,10 +453,8 @@ For mobile phones:
     }
 
     .image-of-me > img {
-        border-radius: 50%;
         transform: rotate(90deg);
-        height: 100px;
-        width: 100px;
+        height: 100%;
     }
 
     .article-body > p {
@@ -562,10 +554,8 @@ For mobile phones:
     }
 
     .image-of-me > img {
-        border-radius: 50%;
         transform: rotate(90deg);
-        height: 150px;
-        width: 150px;
+        height: 100%;
     }
 
     .article-body > p {
@@ -649,17 +639,15 @@ For mobile phones:
     }
 
     .image-of-me{
+        border-radius: 50%;
         position: relative;
         left: 0px;
         display: inline-block;
     }
 
     .image-of-me > img {
-        border-radius: 50%;
         transform: rotate(90deg);
-        height: 150px;
-        width: 150px;
-
+        height: 100%;
     }
 
     .article-body > p {
