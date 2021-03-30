@@ -5,6 +5,8 @@
 	<title>Nicholas Rodriguez</title>
 	<link rel="shortcut icon" type="image/jpg" href="/images/favicon1.png"/>
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:800|PT+Sans|Raleway&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="/css/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -28,6 +30,18 @@
             <span style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776;
                 <div id=mobile-menu-btn>MENU</div>
             </span>
+            @if(!auth)
+            <a href="/auth/login" class="button">
+                LOGIN
+            </a>
+		    @else
+            <a href="/posts/new" class="button">
+                CREATE
+            </a>
+            <a href="/auth/logout" class="button">
+                LOGOUT
+            </a>
+		    @endif
             <a href="/" class="button">
                 HOME
             </a>
@@ -37,10 +51,16 @@
     <div id="mobile-nav" class="overlay">
         <div class="search-bar">
                 <input type="text1" name="search" placeholder="Search...">
-            </div>
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        </div>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-contents">
             <a href="/"> HOME </a>
+            @if(!auth)
+            <a href="/auth/login"> LOGIN </a>
+            @else
+            <a href="/posts/new"> CREATE </a>
+            <a href="/auth/logout"> LOGOUT </a>
+            @endif
         </div>
     </div>
 

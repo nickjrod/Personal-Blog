@@ -208,7 +208,7 @@ input[type="text1"], textarea {
 
 #content {
     position: relative;
-    font-family: Chronicle Cond A;
+    font-family: 'Cormorant', serif;
     font-weight: 500;
 }
 
@@ -220,7 +220,7 @@ input[type="text1"], textarea {
 }
 
 .title {
-    font-family: Chronicle Cond A;
+    font-family: 'Cormorant', serif;;
     font-weight: 500;
     font-size: calc(2rem + 2vw);
     width: 90%;
@@ -354,7 +354,7 @@ input[type="text1"], textarea {
 
 
 p {
-    font-family: Chronicle Cond A;
+    font-family: 'Cormorant', serif;
     font-size: calc(1.25rem);
     text-align: left;
 }
@@ -436,7 +436,7 @@ For mobile phones:
     }
 
     .title {
-        font-family: Chronicle Cond A;
+        font-family: 'Cormorant', serif;
         font-weight: 500;
         font-size: calc(2rem + 2.5vw);
         width: 90%;
@@ -539,7 +539,7 @@ For mobile phones:
     }
 
     .title {
-        font-family: Chronicle Cond A;
+        font-family: 'Cormorant', serif;
         font-weight: 500;
         font-size: calc(2rem + 2.5vw);
         width: 90%;
@@ -631,7 +631,7 @@ For mobile phones:
     }
 
     .title {
-        font-family: Chronicle Cond A;
+        font-family: 'Cormorant', serif;
         font-weight: 500;
         font-size: calc(2rem + 2vw);
         width: 90%;
