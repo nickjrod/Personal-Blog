@@ -72,7 +72,7 @@ h2 {
 
 input[type=text] {
     font-family: 'Cormorant', serif;
-    width: 130px;
+    width: 100%;
     box-sizing: border-box;
     border: none;
     font-size: 16px;
@@ -81,10 +81,18 @@ input[type=text] {
     background-image: url('photos/mg.png');
     background-position: 0px 14px; 
     background-repeat: no-repeat;
-    padding: 12px 20px 12px 40px;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
     outline: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill::first-line,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    font-family: 'Cormorant', serif;
+    transition: background-color 5000s ease-in-out 0s;
 }
 
 input[type=text1] {
@@ -100,7 +108,7 @@ input[type=text1] {
 }
 
 input[type=text]:focus {
-    width: 50%;
+    width: 100%;
     border-bottom: 10px;
 }
 
@@ -115,23 +123,28 @@ input[type="text1"], textarea {
 }
 
 #bar {
-    padding-top: 10px;
     overflow: hidden;
+    margin-top: 1rem;
     margin-bottom: 1rem;
-    display: inline;
+    display: block;
     }
 
 .search-bar {
     display: inline;
     position: relative;
+    padding-left: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    width: 50%;
 }
 
 #bar > .button {
     float: right;
     display: inline-block;
     position: relative;
-    padding-right: 3%;
     padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 3%;
 
     -webkit-transition: 0.25s all ease;
     -moz-transition: 0.25s all ease;
