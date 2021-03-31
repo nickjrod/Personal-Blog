@@ -33,7 +33,7 @@ body{
   display: table;
 }
 
-#toptile{
+#toptile {
     border-width: 0px 0px 10px 0px;
     border-color: black;
     border-style: solid;
@@ -41,6 +41,7 @@ body{
     position: relative;
     overflow: hidden;
     text-align: center;
+    letter-spacing: -4px;
 }
 
 .top-item {
@@ -292,6 +293,7 @@ input[type="text1"], textarea {
 
 #row-footer{
     margin-top: 20px;
+    letter-spacing: -3px;
 }
 
 .footer{
