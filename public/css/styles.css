@@ -66,9 +66,9 @@ h2 {
 
 #header-photo {
     height: 200%;
-    width: 120%;
+    width: 100%;
     z-index: 2;
-    opacity: .9;
+    opacity: 1;
 }
 
 input[type=text] {
@@ -114,7 +114,7 @@ input[type=text]:focus {
 }
 
 input[type=text1]:focus {
-    width: 50%;
+    width: 100%;
     border-bottom: 10px;
     background-color: rgba(0,0,0, 0);
 }
@@ -218,34 +218,11 @@ input[type="text1"], textarea {
   font-size: 60px;
 }
 
-#t0 {
-    transition: .5s ease;
-}
-
-#t1 {
-    transition: .5s ease;
-}
-
-#t2 {
-    transition: .5s ease;
-}
-
-#t0:hover {
-    color: #e9d3e7;
-}
-
-#t1:hover {
-    color: #00aaff;
-}
-
-#t2:hover {
-    color: #98dbc6;
-}
-
 #entry {
     float: left;
     padding: 0 1em 0 0;
-    padding-bottom: 1%
+    padding-bottom: 1%;
+    transition: .5s ease;
 }
 
 .card {
@@ -255,7 +232,7 @@ input[type="text1"], textarea {
     position: relative;
 }
 
-.card > a{
+.card > a {
     color: inherit;
 }
 
@@ -267,17 +244,24 @@ input[type="text1"], textarea {
     position: relative;
 }
 
-#thumb{
+#thumb {
     transition: .5s ease;
 }
 
 .blogimage > img {
+    transition: .5s ease;
     height: auto;
     width: 100%;
 }
 
-.blogimage:hover #thumb {
-  opacity: 0.7;
+#entry:hover #thumb {
+    opacity: 0.7;
+    transition: .5s ease;
+}
+
+#entry:hover .title {
+    color: #e9d3e7;
+    transition: .5s ease;
 }
 
 .title {
@@ -336,12 +320,11 @@ For mobile phones:
 
     #bar > span {
         display: inline-block;
-        padding-bottom: 2%;
-        padding-top: 1%;
+        padding-left: 2%;
     }
 
     #bar > span > div {
-        font-size: 15px;
+        font-size: 100%;
         display: inline-block;
 
         -webkit-transition: 0.25s all ease;
