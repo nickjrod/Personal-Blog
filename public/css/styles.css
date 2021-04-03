@@ -222,7 +222,6 @@ input[type="text1"], textarea {
     float: left;
     padding: 0 1em 0 0;
     padding-bottom: 1%;
-    transition: .5s ease;
 }
 
 .card {
@@ -244,12 +243,7 @@ input[type="text1"], textarea {
     position: relative;
 }
 
-#thumb {
-    transition: .5s ease;
-}
-
 .blogimage > img {
-    transition: .5s ease;
     height: auto;
     width: 100%;
 }
