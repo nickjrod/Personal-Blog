@@ -22,7 +22,7 @@
   "dependencies": {
     "aws": "0.0.3-2",
     "aws-sdk": "^2.814.0",
-    "bcrypt": "^3.0.6",
+    "bcrypt": "^5.0.0",
     "connect-mongo": "^3.0.0",
     "dateformat": "^3.0.3",
     "diff": "^4.0.1",
